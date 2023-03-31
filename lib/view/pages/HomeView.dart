@@ -24,6 +24,7 @@ class HomeView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 PopupMenuButton(
+                  offset: Offset(-30, 65), // mengatur posisi menu dropdown
                   itemBuilder: (BuildContext context) => <PopupMenuEntry>[
                     const PopupMenuItem(
                       child: Text('Edit Profil'),
