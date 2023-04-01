@@ -10,25 +10,27 @@ class InfoView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              // widget pengumuman
-              SizedBox(height: 20),
-              PengumumanCard(
-                title: "Judul Pengumuman",
-                date: "1 Maret 2023",
-                content: "Isi pengumuman",
-              ),
-              SizedBox(height: 20),
-              PengumumanCard(
-                title: "Judul Pengumuman",
-                date: "30 Maret 2023",
-                content: "Isi pengumuman",
-              ),
-              SizedBox(height: 20),
-              // widget lainnya
-              Text("Widget lainnya"),
-            ],
+          child: Center(
+            child: Column(
+              children: [
+                // widget pengumuman
+                SizedBox(height: 20),
+                PengumumanCard(
+                  title: "Judul Pengumuman",
+                  date: "1 Maret 2023",
+                  content: "Kepada seluruh karyawan dan karyawati,Dengan ini kami sampaikan bahwa perusahaan kami akan memberikan libur kepada seluruh karyawan dan karyawati pada hari Kamis, 1 April 2023. Libur ini diberikan sebagai bagian dari upaya perusahaan untuk memberikan waktu istirahat yang memadai bagi karyawan dan karyawati.Harap diperhatikan bahwa pada hari tersebut, kantor kami akan ditutup dan tidak ada aktivitas operasional yang akan dilakukan. Seluruh karyawan dan karyawati kami diharapkan untuk tidak datang ke kantor pada hari tersebut dan dapat mengambil kesempatan ini untuk beristirahat dan bersantai di rumah.Kami akan kembali beroperasi pada hari Jumat, 2 April 2023, seperti biasa.Terima kasih atas perhatiannya.",
+                ),
+                SizedBox(height: 20),
+                PengumumanCard(
+                  title: "Judul Pengumuman",
+                  date: "30 Maret 2023",
+                  content: "Isi pengumuman",
+                ),
+                SizedBox(height: 20),
+                // widget lainnya
+                Text("Widget lainnya"),
+              ],
+            ),
           ),
         ),
       ),
