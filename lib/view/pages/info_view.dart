@@ -18,17 +18,76 @@ class InfoView extends StatelessWidget {
                 PengumumanCard(
                   title: "Judul Pengumuman",
                   date: "1 Maret 2023",
-                  content: "Kepada seluruh karyawan dan karyawati,Dengan ini kami sampaikan bahwa perusahaan kami akan memberikan libur kepada seluruh karyawan dan karyawati pada hari Kamis, 1 April 2023. Libur ini diberikan sebagai bagian dari upaya perusahaan untuk memberikan waktu istirahat yang memadai bagi karyawan dan karyawati.Harap diperhatikan bahwa pada hari tersebut, kantor kami akan ditutup dan tidak ada aktivitas operasional yang akan dilakukan. Seluruh karyawan dan karyawati kami diharapkan untuk tidak datang ke kantor pada hari tersebut dan dapat mengambil kesempatan ini untuk beristirahat dan bersantai di rumah.Kami akan kembali beroperasi pada hari Jumat, 2 April 2023, seperti biasa.Terima kasih atas perhatiannya.",
+                  content:
+                      "Kepada seluruh karyawan dan karyawati,Dengan ini kami sampaikan bahwa perusahaan kami akan memberikan libur kepada seluruh karyawan dan karyawati pada hari Kamis, 1 April 2023. Libur ini diberikan sebagai bagian dari upaya perusahaan untuk memberikan waktu istirahat yang memadai bagi karyawan dan karyawati.Harap diperhatikan bahwa pada hari tersebut, kantor kami akan ditutup dan tidak ada aktivitas operasional yang akan dilakukan. Seluruh karyawan dan karyawati kami diharapkan untuk tidak datang ke kantor pada hari tersebut dan dapat mengambil kesempatan ini untuk beristirahat dan bersantai di rumah.Kami akan kembali beroperasi pada hari Jumat, 2 April 2023, seperti biasa.Terima kasih atas perhatiannya.",
                 ),
                 SizedBox(height: 20),
                 PengumumanCard(
                   title: "Judul Pengumuman",
                   date: "30 Maret 2023",
-                  content: "Isi pengumuman",
+                  content: """ Kepada seluruh karyawan dan karyawati,
+
+Dengan ini kami sampaikan bahwa perusahaan kami akan memberikan libur kepada seluruh karyawan dan karyawati pada hari Kamis, 1 April 2023. Libur ini diberikan sebagai bagian dari upaya perusahaan untuk memberikan waktu istirahat yang memadai bagi karyawan dan karyawati.
+
+Harap diperhatikan bahwa pada hari tersebut, kantor kami akan ditutup dan tidak ada aktivitas operasional yang akan dilakukan. Seluruh karyawan dan karyawati kami diharapkan untuk tidak datang ke kantor pada hari tersebut dan dapat mengambil kesempatan ini untuk beristirahat dan bersantai di rumah.
+
+Kami akan kembali beroperasi pada hari Jumat, 2 April 2023, seperti biasa.
+
+Terima kasih atas perhatiannya.
+
+Hormat kami, """,
+                ),
+                SizedBox(height: 20),
+                PengumumanCard(
+                  title: "Judul Pengumuman",
+                  date: "30 Maret 2023",
+                  content: """ Kepada seluruh karyawan dan karyawati,
+
+Dengan ini kami sampaikan bahwa perusahaan kami akan memberikan libur kepada seluruh karyawan dan karyawati pada hari Kamis, 1 April 2023. Libur ini diberikan sebagai bagian dari upaya perusahaan untuk memberikan waktu istirahat yang memadai bagi karyawan dan karyawati.
+
+Harap diperhatikan bahwa pada hari tersebut, kantor kami akan ditutup dan tidak ada aktivitas operasional yang akan dilakukan. Seluruh karyawan dan karyawati kami diharapkan untuk tidak datang ke kantor pada hari tersebut dan dapat mengambil kesempatan ini untuk beristirahat dan bersantai di rumah.
+
+Kami akan kembali beroperasi pada hari Jumat, 2 April 2023, seperti biasa.
+
+Terima kasih atas perhatiannya.
+
+Hormat kami, """,
+                ),
+                SizedBox(height: 20),
+                PengumumanCard(
+                  title: "Judul Pengumuman",
+                  date: "30 Maret 2023",
+                  content: """ Kepada seluruh karyawan dan karyawati,
+
+Dengan ini kami sampaikan bahwa perusahaan kami akan memberikan libur kepada seluruh karyawan dan karyawati pada hari Kamis, 1 April 2023. Libur ini diberikan sebagai bagian dari upaya perusahaan untuk memberikan waktu istirahat yang memadai bagi karyawan dan karyawati.
+
+Harap diperhatikan bahwa pada hari tersebut, kantor kami akan ditutup dan tidak ada aktivitas operasional yang akan dilakukan. Seluruh karyawan dan karyawati kami diharapkan untuk tidak datang ke kantor pada hari tersebut dan dapat mengambil kesempatan ini untuk beristirahat dan bersantai di rumah.
+
+Kami akan kembali beroperasi pada hari Jumat, 2 April 2023, seperti biasa.
+
+Terima kasih atas perhatiannya.
+
+Hormat kami, """,
+                ),
+                SizedBox(height: 20),
+                PengumumanCard(
+                  title: "Judul Pengumuman",
+                  date: "30 Maret 2023",
+                  content: """ Kepada seluruh karyawan dan karyawati,
+
+Dengan ini kami sampaikan bahwa perusahaan kami akan memberikan libur kepada seluruh karyawan dan karyawati pada hari Kamis, 1 April 2023. Libur ini diberikan sebagai bagian dari upaya perusahaan untuk memberikan waktu istirahat yang memadai bagi karyawan dan karyawati.
+
+Harap diperhatikan bahwa pada hari tersebut, kantor kami akan ditutup dan tidak ada aktivitas operasional yang akan dilakukan. Seluruh karyawan dan karyawati kami diharapkan untuk tidak datang ke kantor pada hari tersebut dan dapat mengambil kesempatan ini untuk beristirahat dan bersantai di rumah.
+
+Kami akan kembali beroperasi pada hari Jumat, 2 April 2023, seperti biasa.
+
+Terima kasih atas perhatiannya.
+
+Hormat kami, """,
                 ),
                 SizedBox(height: 20),
                 // widget lainnya
-                Text("Widget lainnya"),
+                Text("Hmm,sepertinya udah di akhir pengumuman nih"),
               ],
             ),
           ),
@@ -43,7 +102,11 @@ class PengumumanCard extends StatefulWidget {
   final String date;
   final String content;
 
-  const PengumumanCard({Key? key, required this.title, required this.date, required this.content})
+  const PengumumanCard(
+      {Key? key,
+      required this.title,
+      required this.date,
+      required this.content})
       : super(key: key);
 
   @override
@@ -61,10 +124,22 @@ class _PengumumanCardState extends State<PengumumanCard> {
           _showDetails = !_showDetails;
         });
       },
-      child: Card(
-        elevation: 2.0,
+      child: Container(
+        width: double.infinity, // set width to screen width
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(8.0),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 5,
+              offset: Offset(0, 3), // changes position of shadow
+            ),
+          ],
+        ),
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
