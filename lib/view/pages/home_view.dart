@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'info_View.dart';
+import 'profil_view.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
@@ -23,9 +25,24 @@ class HomeView extends StatelessWidget {
                     bottomRight: Radius.circular(30),
                   ),
                 ),
+                child: ContainerFill(),
               ),
-              ContainerFill(),
-              const Profile(),
+              Positioned(
+                top: 0,
+                left: 0,
+                child: IconButton(
+                  icon: Icon(Icons.notifications),
+                  onPressed: () {
+                   Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => InfoView(),
+                            ),
+                          ); // aksi ketika tombol ditekan
+                  },
+                ),
+              ),
+              Profile(),
               TopWidget(),
             ],
           ),
@@ -67,7 +84,7 @@ class TextWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Yusuf Aristokrat',
+                'Yusuf Aristokrat S.Kom',
                 style: TextStyle(
                     fontSize: 16,
                     fontFamily: 'Poppins',
@@ -113,17 +130,11 @@ class ContainerFill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned.fill(
-      child: ColorFiltered(
-        colorFilter: ColorFilter.mode(
-          Color(0xFFD9D9D9).withOpacity(0.8),
-          BlendMode.dstATop,
-        ),
-        child: Opacity(
-          opacity: 0.5,
-          child: Image.asset(
-            'assets/images/Learning.png',
-            fit: BoxFit.fitHeight,
-          ),
+      child: Opacity(
+        opacity: 0.5,
+        child: Image.asset(
+          'assets/images/learning.png',
+          fit: BoxFit.fitHeight,
         ),
       ),
     );
@@ -177,13 +188,13 @@ class Profile extends StatelessWidget {
           ),
           child: Padding(
             padding: const EdgeInsets.only(
-              right: 30,
+              right: 10,
               top: 45,
               left: 0,
               bottom: 0,
             ),
             child: CircleAvatar(
-              radius: 38.0,
+              radius: 30.0,
               backgroundImage: AssetImage('assets/images/logo.png'),
             ),
           ),
