@@ -7,7 +7,6 @@ void main(List<String> args) {
   runApp(MultiProvider(
     providers: [
         ChangeNotifierProvider(create:  (c)=>LoginProvider()),
-
     ],
     builder: (context,w) {
       return const MaterialApp(
